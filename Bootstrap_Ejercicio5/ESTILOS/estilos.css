@@ -1,0 +1,210 @@
+body{
+  background-image: url(IMG/fondo5.jpg);
+  background-size: auto;
+}
+
+
+/*HEADER*/
+.cabeFoot{
+  background-image: url(IMG/fondo6.jpg);
+  background-position: right;
+  background-size: cover;
+  border: 1px solid pink;
+}
+/*BOTON DEL HEADER PARA VOLVER A LA PAGINA PRINCIPAL*/
+/*CORAZON*/
+.heart {
+  fill: black;
+  top: 5px;
+  width: 50px;
+  animation: pulse 1s ease infinite;
+  margin-right: 10%;
+}
+.heart:hover {
+  fill: fuchsia;
+}
+
+.meriendaone{
+  font-family: 'Merienda One', cursive;
+
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+
+/*BODY*/
+.cuerpo{
+  height: 500px;
+}
+.contenido{
+  border: 1px solid pink;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(133, 29, 97);
+  border-radius: 50%;
+  color: pink;
+}
+.contenido:hover{
+  background-image: url(IMG/estrella3.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+  /*BODY DE LAS DIFERENTES FORMAS QUE VAMOS UTILIZAR*/
+.formas{
+  border: 1px solid pink;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(133, 29, 97);
+  border-radius: 50%;
+  color: pink;
+}
+.texto{
+border: 1px solid pink;
+background-color:  rgb(133, 29, 97);
+color: pink;
+}
+    /*BODY DE LA PAGINA PRINCIPAL*/
+.contenedor{
+  padding: 10%;
+}
+.contenedor > p{
+  color: rgb(131, 14, 125);
+}
+    /*Contenedor para el audio*/
+.audio{
+  border: 1px solid pink;
+  background: rgb(131, 14, 125);
+  color: pink;
+}
+
+.codigo{
+  border: 1px solid pink;
+  background: rgb(131, 14, 125);
+  color: pink;
+  margin-left: 14%;
+}
+.canvas{
+  margin-left: 30%;
+  margin-top: 30%;
+}
+
+/*ESTILOS A LAS DIFERENTES IMAGENES*/
+  /*EDICCION A IMAGENES EN ESPECIFICO*/
+  img[src="../ESTILOS/IMG/JoJo/DIO.png"]{
+      margin-top: 16%;
+      height: 20%;
+      width: 40%;
+  }
+  img[src="../ESTILOS/IMG/JoJo/frd.png"]{
+    margin-top: 6%;
+    height: 20%;
+    width: 30%;
+  }
+  img[src="../ESTILOS/IMG/JoJo/Enrico.png"]{
+    margin-top: 16%;
+    height: 20%;
+    width: 40%;
+  }
+  img[src="../ESTILOS/IMG/JoJo/kira.png"]{
+    margin-top: 8%;
+    height: 20%;
+    width: 40%;
+  }
+  img[src="../ESTILOS/IMG/JoJo/america.png"]{
+    margin-top: 20%;
+    height: 50%;
+    width: 70%;
+  }
+  img[src="../ESTILOS/IMG/JoJo/diavolo.png"]{
+    margin-top: 20%;
+    height: 50%;
+    width: 70%;
+  }
+  img[src="../ESTILOS/IMG/JoJo/GioGio.png" ]{
+    margin-top: 10%;
+    margin-right: 5%;
+    height: 50%;
+    width: 70%;
+  }
+  img[src="../ESTILOS/IMG/JoJo/josuke.png" ]{
+    margin-top: 5%;
+    margin-right: 5%;
+    height: 50%;
+    width: 70%;
+  }
+  img[src="../ESTILOS/IMG/JoJo/jhonny.png" ]{
+    margin-top: 5%;
+    margin-right: 5%;
+    height: 50%;
+    width: 70%;
+  }
+
+/*TEXTO ROTADO 45 GRADOS*/
+.transformed{
+  /* idéntico a rotateZ(45deg); */
+  transform: rotate(45deg);
+  width: 50px;
+  height: 50px;
+  margin-left: 42%;
+  margin-top: 25%;
+}
+
+/*Movimiento Horizontal del cuadrado hecho con svg*/
+@keyframes mianim {
+  from { left: 20%;} /*Fotograma inicio*/
+  to { left: 10%;} /*Fotograma final*/
+}
+/*Regla keyframes para Chrome y Safari*/
+@-webkit-keyframes mianim {
+   from { left: 1%;} /*Fotograma inicio*/
+   to { left: 1%;} /*Fotograma final*/
+}
+        /*posicionamiento, anchura, altura y  borde elemento.*/
+#anim { position: relative ;
+        }
+
+        /*propiedades de animación*/
+
+#anim { /*Forma estándar*/
+
+        animation-name: mianim; /*referencia nombre*/
+        animation-duration: 2s; /*tiempo*/
+        animation-iteration-count: infinite; /*repeticion indefinida*/
+        animation-direction: alternate; /*repetir al revés*/
+
+        /*Para Chrome y Safari*/
+        -webkit-animation-name: mianim; /*referencia nombre*/
+        -webkit-animation-duration: 2s; /*tiempo*/
+        -webkit-animation-iteration-count: infinite; /*repeticion indefinida*/
+        -webkit-animation-direction: alternate; /*repetir al revés*/
+      }
+
+
+/*GRID PARA EL GIMP*/
+.Grid{
+  display: grid;
+  grid-template-areas:
+  "primero . segundo . tercero . cuarto"
+  ;
+}
+.formato{
+  border: 1px solid pink;
+  background: rgb(131, 14, 125);
+  margin-right: 30%;
+  border-radius: 20%;
+}
+.formato > p{
+  color: pink;
+}
+
+.texto{
+  background-color:rgb(131, 14, 125);
+}
+.texto > p{
+  color: pink;
+}
+

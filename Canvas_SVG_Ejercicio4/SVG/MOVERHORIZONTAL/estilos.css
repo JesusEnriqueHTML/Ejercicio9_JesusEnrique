@@ -1,0 +1,21 @@
+@keyframes mianim {
+   from { left: 50px;} /*Fotograma inicio*/
+   to { left: 600px;} /*Fotograma final*/
+}
+
+
+        /*posicionamiento, anchura, altura y  borde elemento.*/
+#anim { position: relative ;
+        }
+
+        /*propiedades de animación*/
+
+#anim { /*Forma estándar*/
+
+        animation-name: mianim; /*referencia nombre*/
+        animation-duration: 5s; /*tiempo*/
+        animation-iteration-count: infinite; /*repeticion indefinida*/
+        animation-direction: alternate; /*repetir al revés*/
+
+}
+

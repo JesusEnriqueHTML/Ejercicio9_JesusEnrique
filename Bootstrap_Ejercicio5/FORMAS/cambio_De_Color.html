@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../ESTILOS/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../ESTILOS/IMG/FORMAS/cuadrado.png" type="image/png" />
+    <!--Link utilizado para poder utilizar bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!--Link para utilizar los elementos de javascript de bootstrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Eater&family=Flavors&family=Fontdiner+Swanky&family=Nosifer&display=swap" rel="stylesheet">
+
+    <title></title>
+  </head>
+  <body>
+
+<!--HEADER-->
+    <div class=" d-flex justify-content-center cabeFoot">
+        <div class="mr-5">
+      <img class="rounded mx-auto d-block w-50 p-3"src="../ESTILOS/IMG/tusk.png" alt="https://www.pinterest.es/pin/631278072761185314/">
+    </div>
+    <div class="container">
+        <p class="display-1 mx-auto d-block  text-sm-left mt-5 meriendaone">CANVAS Y SVG</p>
+        <p class="font-weight-bold mt-5 meriendaone">&copy; Ejercicios hechos por Jesus Enrique Rozas Pena</p>
+
+    </div>
+    <a href="../SVG_CANVAS.html">
+
+      <svg class="heart mr-5 mt-3"  viewBox="0 0 32 29.6">
+  <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+  c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+      </svg>
+
+
+    </a>
+    </div>
+
+    <!--BODY PARA LAS DIFERENTES FORMAS-->
+    <div class="container d-flex flex-row">
+      <img src="../ESTILOS/IMG/JoJo/diavolo.png" class="rounded float-left" alt="">
+      <div class="p-3 d-flex justify-content-center flex-column mb-2 mt-4">
+        <div class="p-3 d-flex justify-content-center mb-2 mt-4" id="segundo" >
+                <div class="formas mr-3 mw-25 mh-25  text-center">
+                  <svg width="200" height="200" class="mt-5 mr-3" >
+                    <rect x="20" y="20" width="250" height="250" style="fill:blue">
+                      <animate attributeType="CSS" attributeName="fill" values="pink;blue;pink" dur="2s" repeatCount="indefinite">
+                    </rect>
+                  </svg>
+                </div>
+        </div>
+        <div class="texto container d-flex flex-column justify-content-center mb-2 mt-2 w-75">
+          <p class="text-center">Para crear un cuadrado con svg y que ademas, gracias a una animacio, cambie de color cada dos segundos, habra que usar lo siguiente</p>
+
+              <p class="codigo text-center w-75">
+                <code>
+                  rect x="20" y="20" width="250" height="250" style="fill:blue"
+                    animate attributeType="CSS" attributeName="fill" from="blue" to="pink" dur="2s" repeatCount="indefinite"
+                  rect
+                </code>
+              </p>
+          </div>
+      </div>
+    </div>
+
+
+    <!--FOOTER-->
+    <div class="card-footer text-muted text-center cabeFoot">
+        <p class="pt-4">Creado el 14/01/2021, Jueves 14 de Enero 2021</p>
+    </div>
+    <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+    <script src="javascript/cuadrado.js"></script>
+    </body>
+    </html>
